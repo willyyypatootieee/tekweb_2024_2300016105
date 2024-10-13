@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // edit 
     function editTask() {
         const currentText = this.firstChild.textContent;
         const newText = prompt('Edit your task:', currentText);
