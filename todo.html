@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&family=Serif&display=swap" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
+    <title>To-Do List</title>
+    <style>
+        .dark-mode {
+            background-color: #333;
+            color: #f4f4f4;
+        }
+
+        .serif {
+            font-family: 'Serif', serif;
+        }
+
+        .sans-serif {
+            font-family: 'Protest Strike', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="todo.html">To-Do List</a></li>
+        </ul>
+    </nav>
+
+    <div class="container sans-serif">
+        <h2>To-Do List</h2>
+        <input type="text" id="new-task" placeholder="Enter new task" />
+        <button id="add-task">Add Task</button>
+        <ul id="task-list"></ul>
+    </div>
+
+    <script src="scripts/todo.js"></script>
+</body>
+</html>

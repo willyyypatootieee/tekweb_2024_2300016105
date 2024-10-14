@@ -7,8 +7,9 @@
         // text size
         const fontSizeSlider = document.getElementById('font-size');
         fontSizeSlider.addEventListener('input', function() {
-            document.body.style.fontSize = this.value + 'px';
+        document.documentElement.style.fontSize = this.value + 'px'; // Change root font-size
         });
+
 
         // tombol dark mode
         const darkModeToggle = document.getElementById('dark-mode-toggle');

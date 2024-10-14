@@ -34,6 +34,31 @@ body {
     margin-top: 2rem;
 }
 
+/* dark mode area */
+.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.dark-mode .container {
+    background-color: #444;
+    color: #f4f4f4;
+}
+
+
+.dark-mode nav {
+    background-color: #222;
+}
+
+.dark-mode a {
+    color: #f4f4f4;
+}
+
+.dark-mode a:hover {
+    color: #ffcc00;
+}
+
+
 h2 {
     font-size: 2.4rem;
     margin-bottom: 1rem;

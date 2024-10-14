@@ -26,7 +26,8 @@
 <body>
     <nav>
         <ul>
-            <li><a href="#todo-list">To-Do List</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="todo.html">To-Do List</a></li>
         </ul>
     </nav>
     
@@ -54,9 +55,8 @@
             <p>LinkedIn: <a href="https://www.linkedin.com/in/achmad-wildan-adila-el-hakim-8684a1258/">Achmad Wildan Adila EL Hakim</a></p>
         </div>
 
-        <!-- Background Color Dropdown -->
         <div>
-            <label for="bg-color">Choose Background Color:</label>
+            <label for="bg-color">ganti warna:</label>
             <select id="bg-color">
                 <option value="#f4f4f4">Default</option>
                 <option value="#ffcccb">Light Red</option>
@@ -65,33 +65,22 @@
             </select>
         </div>
 
-        <!-- Font Size Slider -->
         <div>
             <label for="font-size">Adjust Font Size:</label>
             <input type="range" id="font-size" min="10" max="30" value="16">
         </div>
 
-        <!-- Dark Mode Toggle Button -->
         <div>
             <button id="dark-mode-toggle">Toggle Dark Mode</button>
         </div>
 
-        <!-- Font Style Buttons -->
+
         <div>
             <button id="serif-font">Serif Font</button>
             <button id="sans-serif-font">Sans-Serif Font</button>
         </div>
-
-        <!-- To-Do List Section -->
-        <div id="todo-list" class="section">
-            <h2>To-Do List</h2>
-            <input type="text" id="new-task" placeholder="Enter new task" />
-            <button id="add-task">Add Task</button>
-            <ul id="task-list"></ul>
-        </div>
     </div>
 
     <script src="scripts/script.js"></script>
-    <script src="scripts/todo.js"></script>
 </body>
 </html>
