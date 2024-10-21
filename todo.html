@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&family=Serif&display=swap" rel="stylesheet">
     <link href="styles/styles.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <title>To-Do List</title>
     <style>
         .dark-mode {
@@ -22,12 +24,13 @@
     </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="todo.html">To-Do List</a></li>
+    <nav class="bg-gray-800 p-4 fixed bottom-0 w-full">
+        <ul class="flex justify-center space-x-8">
+            <li><a href="index.html" class="text-white hover:text-yellow-300">Home</a></li>
+            <li><a href="todo.html" class="text-white hover:text-yellow-300">To-Do List</a></li>
         </ul>
     </nav>
+    
 
     <div class="container sans-serif">
         <h2>To-Do List</h2>
