@@ -6,6 +6,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&family=Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://unpkg.com/vanta@latest/dist/vanta.rings.min.js"></script>
+    
 
     <link href="styles/styles.css" rel="stylesheet">
     <title>tekweb</title>
@@ -88,5 +91,17 @@
     </div>
 
     <script src="scripts/script.js"></script>
+    <script>
+        VANTA.RINGS({
+          el: "body",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00
+        })
+        </script>
 </body>
 </html>
