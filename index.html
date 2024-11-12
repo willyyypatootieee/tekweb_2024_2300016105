@@ -25,44 +25,62 @@
         .sans-serif {
             font-family: 'Protest Strike', sans-serif;
         }
+
+        .profile-img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        @media (max-width: 640px) {
+            .profile-img {
+                width: 100px;
+                height: 100px;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+            }
+            .section p, .section li {
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
-<body>
-    <nav class="bg-gray-800 p-4 fixed bottom-0 w-full">
+<body class="bg-gray-100 dark:bg-gray-900 transition-colors duration-500">
+    <nav class="bg-gray-800 p-4 fixed bottom-0 w-full md:relative md:top-0">
         <ul class="flex justify-center space-x-8">
             <li><a href="index.html" class="text-white hover:text-yellow-300">Home</a></li>
             <li><a href="todo.html" class="text-white hover:text-yellow-300">To-Do List</a></li>
         </ul>
     </nav>
     
-    
-    <div class="container sans-serif" id="mainContainer">
-        <div class="profile flex justify-center">
-            <img src="./Screenshot_1.png" alt="Profile Picture" class="profile-img"/>
+    <div class="container mx-auto p-4 sans-serif" id="mainContainer">
+        <div class="profile flex justify-center mb-4">
+            <img src="./Screenshot_1.png" alt="Profile Picture" class="profile-img shadow-lg"/>
         </div>
 
-        <div class="section about">
-            <h2>About Me</h2>
+        <div class="section about mb-8">
+            <h2 class="text-2xl font-bold mb-2">About Me</h2>
             <p>ya ini saya bang </p>
         </div>
 
-        <div class="section projects">
-            <h2>Projects</h2>
-            <ul>
-                <li><a href="www.instagram.com">Project e</a> - ok</li>
-                <li><a href="#">Project 2</a> - ok.</li>
+        <div class="section projects mb-8">
+            <h2 class="text-2xl font-bold mb-2">Projects</h2>
+            <ul class="list-disc list-inside">
+                <li><a href="www.instagram.com" class="text-blue-500 hover:underline">Project e</a> - ok</li>
+                <li><a href="#" class="text-blue-500 hover:underline">Project 2</a> - ok.</li>
             </ul>
         </div>
 
-        <div class="section contact">
-            <h2>Contact</h2>
-            <p>Email: wldnworks@gmail.com</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/achmad-wildan-adila-el-hakim-8684a1258/">Achmad Wildan Adila EL Hakim</a></p>
+        <div class="section contact mb-8">
+            <h2 class="text-2xl font-bold mb-2">Contact</h2>
+            <p>Email: <a href="mailto:wldnworks@gmail.com" class="text-blue-500 hover:underline">wldnworks@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/achmad-wildan-adila-el-hakim-8684a1258/" class="text-blue-500 hover:underline">Achmad Wildan Adila EL Hakim</a></p>
         </div>
 
-        <div>
-            <label for="bg-color">ganti warna:</label>
-            <select id="bg-color">
+        <div class="mb-4">
+            <label for="bg-color" class="block mb-2">Ganti Warna:</label>
+            <select id="bg-color" class="p-2 border rounded">
                 <option value="#f4f4f4">Default</option>
                 <option value="#ffcccb">Light Red</option>
                 <option value="#cceeff">Light Blue</option>
@@ -70,23 +88,20 @@
             </select>
         </div>
 
-        <div>
-            <label for="font-size">Adjust Font Size:</label>
-            <input type="range" id="font-size" min="10" max="30" value="16">
+        <div class="mb-4">
+            <label for="font-size" class="block mb-2">Adjust Font Size:</label>
+            <input type="range" id="font-size" min="10" max="30" value="16" class="w-full">
         </div>
 
-        <button id="back-to-top" style="display: none;">↑ Back to Top</button>
+        <button id="back-to-top" class="fixed bottom-16 right-4 bg-gray-800 text-white p-2 rounded-full shadow-lg" style="display: none;">↑ Back to Top</button>
 
-
-
-        <button id="dark-mode-toggle" aria-label="Toggle Dark Mode">
+        <button id="dark-mode-toggle" aria-label="Toggle Dark Mode" class="bg-gray-800 text-white p-2 rounded-full shadow-lg mb-4">
             <i class="fas fa-moon"></i> Toggle Dark Mode
         </button>
-        
 
-        <div>
-            <button id="serif-font">Serif Font</button>
-            <button id="sans-serif-font">Sans-Serif Font</button>
+        <div class="flex space-x-4">
+            <button id="serif-font" class="bg-gray-800 text-white p-2 rounded shadow-lg">Serif Font</button>
+            <button id="sans-serif-font" class="bg-gray-800 text-white p-2 rounded shadow-lg">Sans-Serif Font</button>
         </div>
     </div>
 
@@ -102,6 +117,6 @@
           scale: 1.00,
           scaleMobile: 1.00
         })
-        </script>
+    </script>
 </body>
 </html>
